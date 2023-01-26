@@ -1,0 +1,133 @@
+:root{
+    --primary-Red: hsl(1, 90%, 64%);
+    --primary-Blue: hsl(219, 85%, 26%);
+    --net-White: hsl(0, 0%, 100%);
+    --net-VeryLight: hsl(210, 60%, 98%);
+    --net-LightGrayish1: hsl(211, 68%, 94%);
+    --net-LightGrayish2: hsl(205, 33%, 90%);
+    --net-GrayishBlue: hsl(219, 14%, 63%);
+    --net-DarkGrayishBlue: hsl(219, 12%, 42%);
+    --net-VeryDarkBlue: hsl(224, 21%, 14%);
+}
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--net-VeryLight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f{display: flex;}
+.jc-sp{justify-content: space-between;}
+.al-c{align-items: center;}
+
+.card{
+    width: 36%;
+    height: 70vh;
+    background-color: var(--net-White);
+    padding: 30px;
+}
+.card .headCard{
+    padding: 10px 0 20px 0px;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.cercle{
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-Red);
+    display: inline-block;
+    border-radius: 50%;
+}
+.active{
+    background-color: var(--net-VeryLight);
+    
+}
+.cp:hover{
+    cursor: pointer;
+}
+.card .bodyCard .comment{
+    display: grid;
+    grid-template-columns: 60px auto;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.not{
+    font-size: 24px;
+}
+.notNum{
+    font-size: 16px;
+    color: white;
+    background-color: var(--net-VeryDarkBlue);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.message{
+    padding: 15px;
+    border: 1px solid var(--net-LightGrayish1);
+    margin: 10px 0 10px 0;
+}
+.message:hover{
+    background-color: var(--net-LightGrayish1);
+    cursor: pointer;
+}
+/* // color  */
+.greyDarkB{
+    color: var(--net-DarkGrayishBlue);
+}
+.greyB{
+    color: var(--net-GrayishBlue);
+}
+.VeryDarkB{
+    color: var(--net-VeryDarkBlue);
+}
+
+.commentImg{
+    display: flex;
+    justify-content: space-between;
+}
+.blue{
+    color: var(--primary-Blue);
+}
+
+
+.imgLa{
+    margin-left: 130px
+}
+.fix{
+    margin-left: 0;
+}
+@media only screen and (max-width: 375px){
+    * {
+        font-size: 14px;
+    }
+    .imgLa{
+        margin-left: 30px;
+    }
+    .fix{
+        margin-left: 27px;
+    }
+    .card{
+        width: 100%;
+        height: 100vh;
+        background-color: var(--net-White);
+        padding: 30px;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
